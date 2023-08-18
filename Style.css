@@ -1,0 +1,279 @@
+body 
+{
+    margin: 0;
+    padding: 0;
+}
+  
+header 
+{
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+  
+header img 
+{
+    max-width: 150px;
+}
+
+header nav ul 
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav li 
+{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+header nav li a 
+{
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Style the hero section */
+.hero 
+{
+    position: relative;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+  
+  /* Style the slideshow container */
+.slideshow-container 
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Hide all slides except the first one */
+.slide 
+{
+    opacity: 0; /* Set the default opacity to 0 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 1s ease; /* Add the transition effect */
+}
+
+/* Show the current slide */
+.slide.fade.active 
+{
+    opacity: 1; /* Change the opacity to 1 for the active slide */
+}
+
+/* Add styles for your slides (e.g., background images, content, etc.) */
+.slide.fade:nth-child(1) 
+{
+    background-image: url('hero.jpg');
+    background-size: cover;
+}
+
+.slide.fade:nth-child(2) 
+{
+    background-image: url('hero2.jpg');
+    background-size: cover;
+}
+
+.hero h1 
+{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p 
+{
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.cta-button 
+{
+    background-color: #ff5500;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cta-button:hover 
+{
+    background-color: #ff7700;
+}
+
+/* Style the about section */
+.about-section 
+{
+    padding: 1px 0;
+    background-color: #333;
+    text-align: center;
+}
+  
+.about-section h2 
+{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+  
+.about-section p 
+{
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+  
+/* Style the services section */
+.services-section 
+{
+    padding: 5px 0;
+    text-align: center;
+}
+
+.services-section h2 
+{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.services-grid 
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+}
+
+.service 
+{
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.service h3 
+{
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.8); /* Adding a semi-transparent background for better readability */
+    padding: 10px;
+}
+
+/* Style the portfolio section */
+.portfolio-section 
+{
+    padding: 80px 0;
+    text-align: center;
+}
+
+.portfolio-section h2 
+{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.portfolio-grid 
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.portfolio-item 
+{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.portfolio-item img 
+{
+    width: 100%;
+    height: auto;
+}
+
+/* Style the testimonial section */
+.testimonial-section 
+{
+    padding: 80px 0;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+.testimonial-section h2 
+{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.testimonial-carousel
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.testimonial 
+{
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.testimonial p 
+{
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.testimonial-author 
+{
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Style the skills section */
+.skills-section 
+{
+    padding: 80px 0;
+    text-align: center;
+}
+
+.skills-section h2 
+{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.skills-list 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill 
+{
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+}
